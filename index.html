@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfólio Acadêmico - Projetos de Extensão Curricular UniFil: Londrinense Tech e Pensamento Computacional">
+    <title>Portfólio Acadêmico | UniFil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header-container">
+            <a href="#" class="logo-link" id="logo-link">
+                <img src="assets/logo-unifil.png" alt="Logo UniFil" class="logo-img" id="logo-img">
+            </a>
+            <nav class="nav" id="main-nav">
+                <ul class="nav-list" id="nav-list">
+                    <li><a href="#sobre" class="nav-link active" data-section="sobre" id="nav-sobre">Sobre Mim</a></li>
+                    <li><a href="#projetos" class="nav-link" data-section="projetos" id="nav-projetos">Projetos</a></li>
+                    <li><a href="#monitoria" class="nav-link" data-section="monitoria" id="nav-monitoria">Monitoria</a></li>
+                    <li><a href="#relatorios" class="nav-link" data-section="relatorios"
+                            id="nav-relatorios">Relatórios</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-particles" id="hero-particles"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Portfólio Acadêmico
+            </div>
+            <h1 class="hero-title">Meu <span class="gradient-text">Portfólio</span></h1>
+            <p class="hero-subtitle">
+                Aqui você poderá acompanhar todos os projetos que desenvolvi ao longo da minha jornada acadêmica.
+            </p>
+            <a href="#sobre" class="hero-cta" id="hero-cta">
+                Conhecer mais
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 13l5 5 5-5" />
+                    <path d="M7 6l5 5 5-5" />
+                </svg>
+            </a>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ==================== SOBRE MIM ==================== -->
+    <section class="section" id="sobre">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">01</span>
+                <h2 class="section-title">Sobre <span class="gradient-text">Mim</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-photo-wrapper" id="about-photo-wrapper">
+                    <div class="about-photo-frame">
+                        <img src="assets/foto-perfil.jpg" alt="Foto de Perfil" class="about-photo" id="about-photo"
+                            onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'photo-placeholder\'><svg width=\'64\' height=\'64\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.5\'><path d=\'M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2\'/><circle cx=\'12\' cy=\'7\' r=\'4\'/></svg><span>Adicione sua foto em<br>assets/foto-perfil.jpg</span></div>'">
+                    </div>
+                    <div class="photo-decoration"></div>
+                </div>
+                <div class="about-text-wrapper">
+                    <div class="about-card glass-card">
+                        <h3 class="about-name"> Gabriel Vilas Bôas Vicente</h3>
+                        <p class="about-course">Engenharia de software - UniFil</p>
+                        <div class="about-divider"></div>
+                        <p class="about-bio">
+                            Eu sou o Gabriel, aqui você vai encontrar tudo sobre minha jornada acadêmica e projetos
+                            pessoais, no passado eu realizei um curso de Piloto privado de avião, mas acabei desistindo
+                            por questões pessoais,
+                            no meu tempo livre gosto de ficar em casa no computador jogando, conversando com amigos e
+                            estudando, estou no começo da minha jornada e tenho muito a aprender.
+                        </p>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PROJETOS ==================== -->
+    <section class="section section-alt" id="projetos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">02</span>
+                <h2 class="section-title">Meus <span class="gradient-text">Projetos</span></h2>
+                <div class="section-line"></div>
+            </div>
+
+            <!-- Tabs para projetos -->
+            <div class="tabs-container" id="project-tabs">
+                <div class="tabs-nav">
+                    <button class="tab-btn active" data-tab="londrinense" id="tab-londrinense">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                            <path d="M2 17l10 5 10-5" />
+                            <path d="M2 12l10 5 10-5" />
+                        </svg>
+                        Londrinense Tech
+                    </button>
+                    <button class="tab-btn" data-tab="computacional" id="tab-computacional">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" />
+                            <path d="M8 21h8" />
+                            <path d="M12 17v4" />
+                        </svg>
+                        Pensamento Computacional
+                    </button>
+                    <div class="tab-indicator" id="tab-indicator"></div>
+                </div>
+
+                <!-- Londrinense Tech -->
+                <div class="tab-content active" id="content-londrinense">
+                    <div class="project-showcase">
+                        <div class="project-info">
+                            <div class="project-icon-wrapper orange-glow">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                                    <path d="M2 17l10 5 10-5" />
+                                    <path d="M2 12l10 5 10-5" />
+                                </svg>
+                            </div>
+                            <h3 class="project-title">Londrinense Tech</h3>
+                            <p class="project-description">
+                                Descreva aqui o projeto Londrinense Tech. Explique seus objetivos,
+                                metodologias utilizadas, público-alvo e os resultados alcançados.
+                                Fale sobre as tecnologias trabalhadas e como o projeto contribui
+                                para a comunidade local.
+                            </p>
+                            <div class="project-objectives">
+                                <h4>Objetivos</h4>
+                                <ul>
+                                    <li>Promover a inclusão digital na comunidade</li>
+                                    <li>Capacitar jovens em habilidades tecnológicas</li>
+                                    <li>Desenvolver soluções tecnológicas para problemas locais</li>
+                                    <li>Fomentar o empreendedorismo tecnológico</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pensamento Computacional -->
+                <div class="tab-content" id="content-computacional">
+                    <div class="project-showcase">
+                        <div class="project-info">
+                            <div class="project-icon-wrapper blue-glow">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" />
+                                    <path d="M8 21h8" />
+                                    <path d="M12 17v4" />
+                                </svg>
+                            </div>
+                            <h3 class="project-title">Pensamento Computacional</h3>
+                            <p class="project-description">
+                                Descreva aqui o projeto Pensamento Computacional. Explique como o projeto
+                                aborda os pilares do pensamento computacional: decomposição, reconhecimento
+                                de padrões, abstração e algoritmos. Fale sobre as atividades desenvolvidas
+                                e seu impacto na formação dos participantes.
+                            </p>
+                            <div class="project-objectives">
+                                <h4>Objetivos</h4>
+                                <ul>
+                                    <li>Desenvolver o raciocínio lógico e computacional</li>
+                                    <li>Aplicar os pilares do pensamento computacional</li>
+                                    <li>Criar atividades educacionais engajadoras</li>
+                                    <li>Contribuir para a formação de cidadãos digitais</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== MONITORIA ==================== -->
+    <section class="section section-alt" id="monitoria">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">03</span>
+                <h2 class="section-title">Atuação como <span class="gradient-text">Monitor</span></h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="monitoria-container">
+                <div class="monitoria-card glass-card">
+                    <div class="monitoria-header">
+                        <div class="monitoria-icon-wrapper">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="monitoria-title">Minha Monitoria</h3>
+                            <p class="monitoria-subtitle">Descreva sua atuação como monitor</p>
+                        </div>
+                    </div>
+                    <div class="monitoria-divider"></div>
+                    <div class="monitoria-content">
+                        <p class="monitoria-text">
+                            Descreva aqui a sua atuação como monitor. Fale sobre a disciplina que você monitora,
+                            as atividades que realiza, como auxilia os alunos, quais desafios enfrenta e
+                            os aprendizados adquiridos com essa experiência. Esta é uma oportunidade de
+                            registrar seu crescimento acadêmico e profissional como monitor.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== RELATÓRIOS ==================== -->
+    <section class="section" id="relatorios">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">04</span>
+                <h2 class="section-title">Relatórios de <span class="gradient-text">Aulas</span></h2>
+                <div class="section-line"></div>
+            </div>
+
+            <!-- Tabs para relatórios -->
+            <div class="tabs-container" id="report-tabs">
+                <div class="tabs-nav">
+                    <button class="tab-btn active" data-tab="rel-londrinense" id="tab-rel-londrinense">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                            <polyline points="14 2 14 8 20 8" />
+                            <line x1="16" y1="13" x2="8" y2="13" />
+                            <line x1="16" y1="17" x2="8" y2="17" />
+                        </svg>
+                        Londrinense Tech
+                    </button>
+                    <button class="tab-btn" data-tab="rel-computacional" id="tab-rel-computacional">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                            <polyline points="14 2 14 8 20 8" />
+                            <line x1="16" y1="13" x2="8" y2="13" />
+                            <line x1="16" y1="17" x2="8" y2="17" />
+                        </svg>
+                        Pensamento Computacional
+                    </button>
+                    <div class="tab-indicator" id="tab-indicator-reports"></div>
+                </div>
+
+                <!-- Relatórios Londrinense Tech -->
+                <div class="tab-content active" id="content-rel-londrinense">
+                    <div class="reports-grid">
+
+                        <article class="report-card glass-card" id="report-lt-1">
+                            <div class="report-toggle" onclick="toggleReport(this)">
+                                <div class="report-toggle-left">
+                                    <div class="report-badge orange-badge">Aula 01</div>
+                                    <h4 class="report-title">Título da Aula</h4>
+                                </div>
+                                <svg class="report-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="6 9 12 15 18 9"/>
+                                </svg>
+                            </div>
+                            <div class="report-collapse">
+                                <div class="report-collapse-inner">
+                                    <div class="report-expand-grid">
+                                        <div class="report-photos">
+                                            <div class="report-photo-slot">
+                                                <img src="assets/aulas/lt-aula01-1.jpg" alt="Foto Aula 01" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                                                <div class="photo-empty"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Foto 1</span></div>
+                                            </div>
+                                            <div class="report-photo-slot">
+                                                <img src="assets/aulas/lt-aula01-2.jpg" alt="Foto Aula 01" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                                                <div class="photo-empty"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Foto 2</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="report-text-area">
+                                            <div class="report-date-inline">
+                                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+                                                <span>01 Mar 2024</span>
+                                            </div>
+                                            <p class="report-summary">Escreva aqui o relatório da primeira aula do projeto Londrinense Tech. Descreva as atividades realizadas, os temas abordados e suas reflexões sobre a experiência.</p>
+                                            <div class="report-tags"><span class="report-tag">Tema 1</span><span class="report-tag">Tema 2</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="report-card glass-card" id="report-lt-2">
+                            <div class="report-toggle" onclick="toggleReport(this)">
+                                <div class="report-toggle-left">
+                                    <div class="report-badge orange-badge">Aula 02</div>
+                                    <h4 class="report-title">Título da Aula</h4>
+                                </div>
+                                <svg class="report-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                            </div>
+                            <div class="report-collapse">
+                                <div class="report-collapse-inner">
+                                    <div class="report-expand-grid">
+                                        <div class="report-photos">
+                                            <div class="report-photo-slot">
+                                                <img src="assets/aulas/lt-aula02-1.jpg" alt="Foto Aula 02" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                                                <div class="photo-empty"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Foto 1</span></div>
+                                            </div>
+                                            <div class="report-photo-slot">
+                                                <img src="assets/aulas/lt-aula02-2.jpg" alt="Foto Aula 02" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                                                <div class="photo-empty"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Foto 2</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="report-text-area">
+                                            <div class="report-date-inline">
+                                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+                                                <span>15 Mar 2024</span>
+                                            </div>
+                                            <p class="report-summary">Escreva aqui o relatório da segunda aula. Descreva os conteúdos trabalhados, metodologias aplicadas e resultados observados.</p>
+                                            <div class="report-tags"><span class="report-tag">Tema 1</span><span class="report-tag">Tema 2</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="report-card glass-card" id="report-lt-3">
+                            <div class="report-toggle" onclick="toggleReport(this)">
+                                <div class="report-toggle-left">
+                                    <div class="report-badge orange-badge">Aula 03</div>
+                                    <h4 class="report-title">Título da Aula</h4>
+                                </div>
+                                <svg class="report-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                            </div>
+                            <div class="report-collapse">
+                                <div class="report-collapse-inner">
+                                    <div class="report-expand-grid">
+                                        <div class="report-photos">
+                                            <div class="report-photo-slot">
+                                                <img src="assets/aulas/lt-aula03-1.jpg" alt="Foto Aula 03" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                                                <div class="photo-empty"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Foto 1</span></div>
+                                            </div>
+                                            <div class="report-photo-slot">
+                                                <img src="assets/aulas/lt-aula03-2.jpg" alt="Foto Aula 03" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                                                <div class="photo-empty"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Foto 2</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="report-text-area">
+                                            <div class="report-date-inline">
+                                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+                                                <span>29 Mar 2024</span>
+                                            </div>
+                                            <p class="report-summary">Continue adicionando relatórios conforme as aulas acontecem. Copie este bloco de código para adicionar novos relatórios.</p>
+                                            <div class="report-tags"><span class="report-tag">Tema 1</span><span class="report-tag">Tema 2</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+                <!-- Relatórios Pensamento Computacional -->
+                <div class="tab-content" id="content-rel-computacional">
+                    <div class="reports-grid">
+
+                        <article class="report-card glass-card" id="report-pc-1">
+                            <div class="report-toggle" onclick="toggleReport(this)">
+                                <div class="report-toggle-left">
+                                    <div class="report-badge blue-badge">Aula 01</div>
+                                    <h4 class="report-title">Título da Aula</h4>
+                                </div>
+                                <svg class="report-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                            </div>
+                            <div class="report-collapse">
+                                <div class="report-collapse-inner">
+                                    <div class="report-expand-grid">
+                                        <div class="report-photos">
+                                            <div class="report-photo-slot"><img src="assets/aulas/pc-aula01-1.jpg" alt="Foto" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"><div class="photo-empty"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Foto 1</span></div></div>
+                                            <div class="report-photo-slot"><img src="assets/aulas/pc-aula01-2.jpg" alt="Foto" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"><div class="photo-empty"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Foto 2</span></div></div>
+                                        </div>
+                                        <div class="report-text-area">
+                                            <div class="report-date-inline"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg><span>05 Mar 2024</span></div>
+                                            <p class="report-summary">Escreva aqui o relatório da primeira aula do projeto Pensamento Computacional. Descreva as atividades desenvolvidas, conceitos trabalhados e suas reflexões.</p>
+                                            <div class="report-tags"><span class="report-tag">Decomposição</span><span class="report-tag">Lógica</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="report-card glass-card" id="report-pc-2">
+                            <div class="report-toggle" onclick="toggleReport(this)">
+                                <div class="report-toggle-left">
+                                    <div class="report-badge blue-badge">Aula 02</div>
+                                    <h4 class="report-title">Título da Aula</h4>
+                                </div>
+                                <svg class="report-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                            </div>
+                            <div class="report-collapse">
+                                <div class="report-collapse-inner">
+                                    <div class="report-expand-grid">
+                                        <div class="report-photos">
+                                            <div class="report-photo-slot"><img src="assets/aulas/pc-aula02-1.jpg" alt="Foto" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"><div class="photo-empty"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Foto 1</span></div></div>
+                                            <div class="report-photo-slot"><img src="assets/aulas/pc-aula02-2.jpg" alt="Foto" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"><div class="photo-empty"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Foto 2</span></div></div>
+                                        </div>
+                                        <div class="report-text-area">
+                                            <div class="report-date-inline"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg><span>19 Mar 2024</span></div>
+                                            <p class="report-summary">Escreva aqui o relatório da segunda aula. Descreva os exercícios realizados, os pilares do pensamento computacional explorados e os aprendizados obtidos.</p>
+                                            <div class="report-tags"><span class="report-tag">Padrões</span><span class="report-tag">Abstração</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="report-card glass-card" id="report-pc-3">
+                            <div class="report-toggle" onclick="toggleReport(this)">
+                                <div class="report-toggle-left">
+                                    <div class="report-badge blue-badge">Aula 03</div>
+                                    <h4 class="report-title">Título da Aula</h4>
+                                </div>
+                                <svg class="report-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                            </div>
+                            <div class="report-collapse">
+                                <div class="report-collapse-inner">
+                                    <div class="report-expand-grid">
+                                        <div class="report-photos">
+                                            <div class="report-photo-slot"><img src="assets/aulas/pc-aula03-1.jpg" alt="Foto" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"><div class="photo-empty"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Foto 1</span></div></div>
+                                            <div class="report-photo-slot"><img src="assets/aulas/pc-aula03-2.jpg" alt="Foto" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"><div class="photo-empty"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Foto 2</span></div></div>
+                                        </div>
+                                        <div class="report-text-area">
+                                            <div class="report-date-inline"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg><span>02 Abr 2024</span></div>
+                                            <p class="report-summary">Continue adicionando relatórios conforme as aulas acontecem. Copie este bloco de código para adicionar novos relatórios.</p>
+                                            <div class="report-tags"><span class="report-tag">Algoritmos</span><span class="report-tag">Resolução</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTATO ==================== -->
+    <section class="section section-alt" id="contato">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">05</span>
+                <h2 class="section-title">Entre em <span class="gradient-text">Contato</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-buttons">
+                <a href="mailto:seuemail@exemplo.com" class="contact-btn contact-email" id="btn-email" target="_blank">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4l-10 8L2 4"/></svg>
+                    <span>E-mail</span>
+                </a>
+                <a href="https://wa.me/55SEUNUMERO" class="contact-btn contact-whatsapp" id="btn-whatsapp" target="_blank">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    <span>WhatsApp</span>
+                </a>
+                <a href="https://github.com/SEUUSUARIO" class="contact-btn contact-github" id="btn-github" target="_blank">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="assets/logo-unifil.png" alt="Logo UniFil" class="footer-logo">
+                    <p>Portfólio de Extensão Curricular</p>
+                    <p class="footer-institution">Centro Universitário Filadélfia — UniFil</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="#sobre">Sobre Mim</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#monitoria">Monitoria</a></li>
+                        <li><a href="#relatorios">Relatórios</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Projetos</h4>
+                    <ul>
+                        <li><a href="#projetos" onclick="switchTab('londrinense')">Londrinense Tech</a></li>
+                        <li><a href="#projetos" onclick="switchTab('computacional')">Pensamento Computacional</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 — Portfólio Acadêmico | UniFil</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
